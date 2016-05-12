@@ -1,6 +1,6 @@
 ﻿<!DOCTYPE html>
 <html>
-  <head>
+<head>
     <meta charset="utf-8">
     <title>Jasmine Wiggins</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,281 +9,288 @@
     <!-- Bootstrap -->
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/bootstrap-responsive.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet"> 
-    
+    <link href="css/style.css" rel="stylesheet">
+
     <!--Font-->
     <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600' rel='stylesheet' type='text/css'>
-    
-    
-    
+
+
+
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-      
-      <!-- Fav and touch icons -->
-      <link rel="shortcut icon" href="ico/favicon.ico">
-      <link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png">
-      <link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png">
-      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png">
-      <link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png">
+    <!-- Fav and touch icons -->
+    <link rel="shortcut icon" href="ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png">
 
 
-      
 
-    <!-- SCRIPT 
-    ============================================================-->  
+
+    <!-- SCRIPT
+    ============================================================-->
     <script src="http://code.jquery.com/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
-      
-      
-  </head>
-  <body>
-  <!--HEADER ROW-->
-  <div id="header-row">
-    <div class="container">
-      <div class="row">
-              <!--LOGO-->
-              <div class="span3"><a class="brand" href="#"><img src="img/small.gif" /></a></div>
-              <!-- /LOGO -->
+    <script src="js/weatherchart.js"></script>
 
-            <!-- MAIN NAVIGATION -->  
-              <div class="span9">
-                <div class="navbar  pull-right">
-                  <div class="navbar-inner">
-                    <a data-target=".navbar-responsive-collapse" data-toggle="collapse" class="btn btn-navbar"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a>
-                    <div class="nav-collapse collapse navbar-responsive-collapse">
-                    <ul class="nav">
-                        <li class="active"><a href="index.html">Home</a></li>
-                        
-                        <!--
-                        <li class="dropdown">
-                          <a href="about.html" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
-                            <ul class="dropdown-menu">
-                                  <li><a href="about.html">Company</a></li>
-                                  <li><a href="about.html">History</a></li>
-                                  <li><a href="about.html">Team</a></li>
-                            </ul>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 
-                        </li>
-                        -->
+</head>
+<body>
+    <!--HEADER ROW-->
+    <div id="header-row">
+        <div class="container">
+            <div class="row">
+                <!--LOGO-->
+                <div class="span3"><a class="brand" href="#"><img src="img/small.gif" /></a></div>
+                <!-- /LOGO -->
+                <!-- MAIN NAVIGATION -->
+                <div class="span9">
+                    <div class="navbar  pull-right">
+                        <div class="navbar-inner">
+                            <a data-target=".navbar-responsive-collapse" data-toggle="collapse" class="btn btn-navbar"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a>
+                            <div class="nav-collapse collapse navbar-responsive-collapse">
+                                <ul class="nav">
+                                    <li class="active"><a href="index.html">Home</a></li>
 
-                        <li><a href="sudoku.html">Sudoku</a></li>
-                        <li><a href="weatherService.html">Weather Service</a></li>
-                        <li><a href="activeInterval.html">Active Interval</a></li>
-                        <li><a href="webDevelopment.html">Web Development</a></li>
-                        <li><a href="blog.html">Blog</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                 
-                    </ul>
-                  </div>
+                                    <!--
+                                    <li class="dropdown">
+                                      <a href="about.html" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
+                                        <ul class="dropdown-menu">
+                                              <li><a href="about.html">Company</a></li>
+                                              <li><a href="about.html">History</a></li>
+                                              <li><a href="about.html">Team</a></li>
+                                        </ul>
 
-                  </div>
-                </div>
-              </div>
-            <!-- MAIN NAVIGATION -->  
-      </div>
-    </div>
-  </div>
-  <!-- /HEADER ROW -->
+                                    </li>
+                                    -->
 
-  <div class="container">
+                                    <li><a href="sudoku.html">Sudoku</a></li>
+                                    <li><a href="weatherService.html">Weather Service</a></li>
+                                    <li><a href="activeInterval.html">Active Interval</a></li>
+                                    <li><a href="webDevelopment.html">Web Development</a></li>
+                                    <li><a href="blog.html">Blog</a></li>
+                                    <li><a href="contact.html">Contact</a></li>
 
-  <!--Carousel
-  ==================================================-->
+                                </ul>
+                            </div>
 
-  <div id="myCarousel" class="carousel slide">
-    <div class="carousel-inner">
-        <div class="active item">
-            <div class="container">
-              <div class="row">
-            
-                  <div class="span6">
-
-                    <div class="carousel-caption">
-                          <h1>Jasmine Wiggins</h1>
-                          <p class="lead">Welcome to my website! Have a look around.</p>
-                          <a class="btn btn-large btn-primary" href="https://github.com/jxxi">Github</a>
-                          <a class="btn btn-large btn-primary" href="https://www.linkedin.com/in/jasminerwiggins">LinkedIn</a>
-                          <a class="btn btn-large btn-primary" target="_blank" href="Jasmine.Wiggins.Resume.pdf">Resume</a>
+                        </div>
                     </div>
-
-                  </div>
-                  <br />
-                  <div class="span6" style="padding-top:40px"><img src="img\buildDesk.jpg"></div>
-              </div>
+                </div>
+                <!-- MAIN NAVIGATION -->
             </div>
-    </div>
-
-    </div>
-       <!-- Carousel nav -->
-      <!--
-      <a class="carousel-control left " href="#myCarousel" data-slide="prev"><i class="icon-chevron-left"></i></a>
-      <a class="carousel-control right" href="#myCarousel" data-slide="next"><i class="icon-chevron-right"></i></a>
-      -->
-        <!-- /.Carousel nav -->
-  </div>
-    <!-- /Carousel -->
-
-<!-- Feature==============================================-->
-
-
-  <div class="row feature-box">
-      <div class="span12 cnt-title">
-       <h1>Featured Projects</h1> 
-        <span></span>        
-      </div>
-
-      <div class="span4">
-        <img src="img/icon3.png">
-        <h2>Sudoku</h2>
-        <p>
-            One of my favorite games to play as a kid, created using Groovy. Play a round!
-        </p>
-
-        <a href="sudoku.html">Play &rarr;</a>
-
-      </div>
-
-      <div class="span4">
-        <img src="img/icon2.png">
-        <h2>Weather Application</h2>
-        <p>
-            An application written in Groovy that returns a cities current weather. 
-        </p>   
-          <a href="weatherService.html">Explore &rarr;</a>    
-      </div>
-
-      <div class="span4">
-        <img src="img/icon1.png">
-        <h2>Web Development</h2>
-        <p>
-            Recently I have gotten into web development a bit more.
-        </p>
-          <a href="webDevelopment.html">Take a Look &rarr;</a>
-      </div>
-  </div>
-
-
-<!-- /.Feature -->
-
-  <div class="hr-divider"></div>
-
-<!-- Row View -->
-
-
-    <div class="row">
-        <div class="span6"><img src="img/responsive.png"></div>
-
-        <div class="span6">
-          <img class="hidden-phone" src="img/icon4.png" alt="">
-          <h1>Active Interval</h1>
-            <p>First AngularJS project, an app used for interval training. Take a look at the desktop version!</p>
-             <a href="activeInterval.html">Move &rarr;</a>
         </div>
     </div>
+    <!-- /HEADER ROW -->
 
-      <div class="hr-divider"></div>
-
-      <div class="row">
-          <div class="span12 cnt-title">
-              <h1>Take a look at my current favorites!</h1>
-              <span>Stuff I have used in projects, played with, etc.</span>
-          </div>
-
-          <div class="span6">
-              <div class="media">
-                  <a href="http://pcpartpicker.com/" class="pull-left"><img src="img/icon-service3.png" class="media-object" alt='' /></a>
-                  <div class="media-body">
-                      <h4 class="media-heading">
-                          PCPartPicker
-                      </h4>
-                      <p>
-                          Recently I created my first PC, in lieu of Star Wars Battlefront coming out. I decided to finally build something good to game with. You can create your own list pf parts,
-                          while being sure they are compatible. I also enjoyed admiring others' builds.
-
-                          Check out mine below!
-                      </p>
-                      <a href="https://pcpartpicker.com/b/ZjFdnQ" class="btn" type="button">My First Build</a>
-                  </div>
-              </div>
-          </div>
-
-          <div class="span6">
-              <div class="media">
-                  <a href="https://fortawesome.github.io/Font-Awesome/" class="pull-left"><img src="img/icon-service2.png" class="media-object" alt='' /></a>
-                  <div class="media-body">
-                      <h4 class="media-heading">
-                          Fontawesome
-                      </h4>
-                      <p>
-                          Customizable and scalable icons, great if you need them for web development. Pretty nice when combined with Bootstrap
-                          <br />
-                          <br />
-                          <br /><br />
-                      </p>
-                      <a href="https://fortawesome.github.io/Font-Awesome/" class="btn" type="button">Font Awesome</a>
-                  </div>
-              </div>
-          </div>
-          
-          <div class="span6">
-              <div class="media">
-                  <a href="http://exercism.io/" class="pull-left"><img src="img/icon-service4.png" class="media-object" alt='' /></a>
-                  <div class="media-body">
-                      <h4 class="media-heading">
-                          Exercism.io
-                      </h4>
-                      <p>
-                          This one I have not had the chance to play with yet. But when I have the time I will definitly have to give it a try. 
-                          Programming challenges reviewed by fellow peers.
-                      </p>
-                      <a href="http://exercism.io/" class="btn" type="button">Exercism.io</a>
-                  </div>
-              </div>
-
-          </div>
-          <div class="span6">
-              <div class="media">
-                  <a href="https://www.codecademy.com/learn" class="pull-left"><img src="img/icon-service5.png" class="media-object" alt='' /></a>
-                  <div class="media-body">
-                      <h4 class="media-heading">
-                          Code Academy
-                      </h4>
-                      <p>
-                          This is a great, interactive learning experience. I've recently began the AngularJS tutorials, and it is pretty nice.
-                          There are also a lot of others to choose from. 
-                      </p>
-                      <a href="https://www.codecademy.com/learn" class="btn" type="button">Code Academy</a>
-                  </div>
-              </div>
-          </div>
-      </div>
-
-    
-</div>
-
-
-<!-- /.Row View -->
-
-
-
-<!--Footer
-==========================-->
-
-<footer>
     <div class="container">
-      <div class="row">
-            <div class="social pull-right">
-                <a href="https://github.com/jxxi"><img src="img/social/GitHub.png" alt=""></a>
-                <a href="https://www.linkedin.com/in/jasminerwiggins"><img src="img/social/linkedin.png" alt=""></a>
+
+        <!--Carousel
+        ==================================================-->
+
+        <div id="myCarousel" class="carousel slide">
+            <div class="carousel-inner">
+                <div class="active item">
+                    <div class="container">
+                        <div class="row">
+
+                            <div class="span6">
+
+                                <div class="carousel-caption">
+                                    <h1>Jasmine Wiggins</h1>
+                                    <p class="lead">Welcome to my website! Have a look around.</p>
+                                    <a class="btn btn-large btn-primary" href="https://github.com/jxxi">Github</a>
+                                    <a class="btn btn-large btn-primary" href="https://www.linkedin.com/in/jasminerwiggins">LinkedIn</a>
+                                    <a class="btn btn-large btn-primary" target="_blank" href="Jasmine.Wiggins.Resume.pdf">Resume</a>
+                                </div>
+
+                            </div>
+                            <br />
+                            <div class="span6" style="padding-top:40px"><img src="img\buildDesk.jpg"></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- Carousel nav -->
+            <!--
+            <a class="carousel-control left " href="#myCarousel" data-slide="prev"><i class="icon-chevron-left"></i></a>
+            <a class="carousel-control right" href="#myCarousel" data-slide="next"><i class="icon-chevron-right"></i></a>
+            -->
+            <!-- /.Carousel nav -->
+        </div>
+        <!-- /Carousel -->
+
+        <!-- Feature==============================================-->   
+
+        <div class="row feature-box">
+            <div class="span12 cnt-title">
+                <h1>Featured Projects</h1>
+                <span></span>
+            </div>
+
+            <div class="span4">
+                <img src="img/icon3.png">
+                <h2>Sudoku</h2>
+                <p>
+                    One of my favorite games to play as a kid, created using Groovy. Play a round!
+                </p>
+
+                <a href="sudoku.html">Play &rarr;</a>
+
+            </div>
+
+            <div class="span4">
+                <img src="img/icon2.png">
+                <h2>Weather Application</h2>
+                <p>
+                    An application written in Groovy that returns a cities current weather.
+                </p>
+                <a href="weatherService.html">Explore &rarr;</a>
+            </div>
+
+            <div class="span4">
+                <img src="img/icon1.png">
+                <h2>Web Development</h2>
+                <p>
+                    Recently I have gotten into web development a bit more.
+                </p>
+                <a href="webDevelopment.html">Take a Look &rarr;</a>
             </div>
         </div>
-      </div>
+
+        <div class="hr-divider"></div>
+
+        <div class="row feature-box">
+            <div id="container" style="width: 800px; height: 310px; margin: 0 auto">
+                <div style="margin-top: 100px; text-align: center" id="loading">
+                    <i class="fa fa-spinner fa-spin"></i> Loading data from external source
+                </div>
+            </div>
+        </div>
+
+        <!-- /.Feature -->
+
+        <div class="hr-divider"></div>
+
+        <!-- Row View -->
+
+
+        <div class="row">
+            <div class="span6"><img src="img/responsive.png"></div>
+
+            <div class="span6">
+                <img class="hidden-phone" src="img/icon4.png" alt="">
+                <h1>Active Interval</h1>
+                <p>First AngularJS project, an app used for interval training. Take a look at the desktop version!</p>
+                <a href="activeInterval.html">Move &rarr;</a>
+            </div>
+        </div>
+
+        <div class="hr-divider"></div>
+
+        <div class="row">
+            <div class="span12 cnt-title">
+                <h1>Take a look at my current favorites!</h1>
+                <span>Stuff I have used in projects, played with, etc.</span>
+            </div>
+
+            <div class="span6">
+                <div class="media">
+                    <a href="http://pcpartpicker.com/" class="pull-left"><img src="img/icon-service3.png" class="media-object" alt='' /></a>
+                    <div class="media-body">
+                        <h4 class="media-heading">
+                            PCPartPicker
+                        </h4>
+                        <p>
+                            Recently I created my first PC, in lieu of Star Wars Battlefront coming out. I decided to finally build something good to game with. You can create your own list pf parts,
+                            while being sure they are compatible. I also enjoyed admiring others' builds.
+
+                            Check out mine below!
+                        </p>
+                        <a href="https://pcpartpicker.com/b/ZjFdnQ" class="btn" type="button">My First Build</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="span6">
+                <div class="media">
+                    <a href="https://fortawesome.github.io/Font-Awesome/" class="pull-left"><img src="img/icon-service2.png" class="media-object" alt='' /></a>
+                    <div class="media-body">
+                        <h4 class="media-heading">
+                            Fontawesome
+                        </h4>
+                        <p>
+                            Customizable and scalable icons, great if you need them for web development. Pretty nice when combined with Bootstrap
+                            <br />
+                            <br />
+                            <br /><br />
+                        </p>
+                        <a href="https://fortawesome.github.io/Font-Awesome/" class="btn" type="button">Font Awesome</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="span6">
+                <div class="media">
+                    <a href="http://exercism.io/" class="pull-left"><img src="img/icon-service4.png" class="media-object" alt='' /></a>
+                    <div class="media-body">
+                        <h4 class="media-heading">
+                            Exercism.io
+                        </h4>
+                        <p>
+                            This one I have not had the chance to play with yet. But when I have the time I will definitly have to give it a try.
+                            Programming challenges reviewed by fellow peers.
+                        </p>
+                        <a href="http://exercism.io/" class="btn" type="button">Exercism.io</a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="span6">
+                <div class="media">
+                    <a href="https://www.codecademy.com/learn" class="pull-left"><img src="img/icon-service5.png" class="media-object" alt='' /></a>
+                    <div class="media-body">
+                        <h4 class="media-heading">
+                            Code Academy
+                        </h4>
+                        <p>
+                            This is a great, interactive learning experience. I've recently began the AngularJS tutorials, and it is pretty nice.
+                            There are also a lot of others to choose from.
+                        </p>
+                        <a href="https://www.codecademy.com/learn" class="btn" type="button">Code Academy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
     </div>
-</footer>
 
-<!--/.Footer-->
 
-  </body>
+    <!-- /.Row View -->
+    <!--Footer
+    ==========================-->
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="social pull-right">
+                    <a href="https://github.com/jxxi"><img src="img/social/GitHub.png" alt=""></a>
+                    <a href="https://www.linkedin.com/in/jasminerwiggins"><img src="img/social/linkedin.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+        </div>
+    </footer>
+
+    <!--/.Footer-->
+
+</body>
 </html>
