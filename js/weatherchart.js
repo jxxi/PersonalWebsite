@@ -1,29 +1,5 @@
 ﻿/**
- * This is a complex demo of how to set up a Highcharts chart, coupled to a
- * dynamic source and extended by drawing image sprites, wind arrow paths
- * and a second grid on top of the chart. The purpose of the demo is to inpire
- * developers to go beyond the basic chart types and show how the library can
- * be extended programmatically. This is what the demo does:
- *
- * - Loads weather forecast from www.yr.no in form of an XML service. The XML
- *   is translated on the Higcharts website into JSONP for the sake of the demo
- *   being shown on both our website and JSFiddle.
- * - When the data arrives async, a Meteogram instance is created. We have
- *   created the Meteogram prototype to provide an organized structure of the different
- *   methods and subroutines associated with the demo.
- * - The parseYrData method parses the data from www.yr.no into several parallel arrays. These
- *   arrays are used directly as the data option for temperature, precipitation
- *   and air pressure. As the temperature data gives only full degrees, we apply
- *   some smoothing on the graph, but keep the original data in the tooltip.
- * - After this, the options structure is build, and the chart generated with the
- *   parsed data.
- * - In the callback (on chart load), we weather icons on top of the temperature series.
- *   The icons are sprites from a single PNG image, placed inside a clipped 30x30
- *   SVG <g> element. VML interprets this as HTML images inside a clipped div.
- * - Lastly, the wind arrows are built and added below the plot area, and a grid is
- *   drawn around them. The wind arrows are basically drawn north-south, then rotated
- *   as per the wind direction.
- */
+ - Loads weather forecast from www.yr.no in form of an XML service. 
 
 function Meteogram(xml, container) {
     // Parallel arrays for the chart data, these are populated as the XML/JSON file
