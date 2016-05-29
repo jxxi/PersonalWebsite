@@ -1,5 +1,3 @@
-﻿/**
- - Loads weather forecast from www.yr.no in form of an XML service. 
 
 function Meteogram(xml, container) {
     // Parallel arrays for the chart data, these are populated as the XML/JSON file
