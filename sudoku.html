@@ -6,11 +6,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="">
   <meta name="author" content="">
-
 	
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/bootstrap-responsive.min.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
+
+	<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+	<link rel="manifest" href="/manifest.json">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#000000">
+	<meta name="theme-color" content="#ffffff">
 
   <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
   <!--[if lt IE 9]>
@@ -22,9 +28,7 @@
   <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/apple-touch-icon-114-precomposed.png">
   <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/apple-touch-icon-72-precomposed.png">
   <link rel="apple-touch-icon-precomposed" href="img/apple-touch-icon-57-precomposed.png">
-  <link rel="shortcut icon" href="img/favicon.png">
-  
-
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 
     <!-- SCRIPT 
     ============================================================-->  
@@ -40,31 +44,17 @@
     <div class="container">
       <div class="row">
             <!--LOGO-->
-            <div class="span3"><a class="brand" href="#"><img src="img/small.gif" /></a></div>
+            <div class="span3"><a class="brand" href="#"><img src="img/small.gif" style="width:100px;height:65px;" /></a></div>
 
             <!-- MAIN NAVIGATION -->  
               <div class="span9">
-                <div class="navbar  pull-right">
+                <div class="navbar">
                   <div class="navbar-inner">
                     <a data-target=".navbar-responsive-collapse" data-toggle="collapse" class="btn btn-navbar"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a>
                     <div class="nav-collapse collapse navbar-responsive-collapse">
                     <ul class="nav">
-                        <li class="active"><a href="index.html">Home</a></li>
-                        
-                        <!--
-                        <li class="dropdown">
-                          <a href="about.html" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
-                            <ul class="dropdown-menu">
-                                  <li><a href="about.html">Company</a></li>
-                                  <li><a href="about.html">History</a></li>
-                                  <li><a href="about.html">Team</a></li>
-                            </ul>
-
-                        </li>
-                        -->
-
-
-                        <li><a href="sudoku.html">Sudoku</a></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li class="active"><a href="sudoku.html">Sudoku</a></li>
                         <li><a href="weatherService.html">Weather Service</a></li>
                         <li><a href="activeInterval.html">Active Interval</a></li>
                         <li><a href="webDevelopment.html">Web Development</a></li>
@@ -82,7 +72,7 @@
     </div>
   </div>
   <!-- /HEADER ROW -->
-
+  <div id="info-container"></div>
 
 
 

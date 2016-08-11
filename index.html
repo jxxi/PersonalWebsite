@@ -10,6 +10,14 @@
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/bootstrap-responsive.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+	
+	
+	<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+	<link rel="manifest" href="/manifest.json">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#000000">
+	<meta name="theme-color" content="#ffffff">
 
     <!--Font-->
     <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600' rel='stylesheet' type='text/css'>
@@ -26,7 +34,7 @@
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png">
-
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 
 
 
@@ -47,29 +55,16 @@
         <div class="container">
             <div class="row">
                 <!--LOGO-->
-                <div class="span3"><a class="brand" href="#"><img src="img/small.gif" /></a></div>
+                <div class="span3"><a class="brand" href="#"><img src="img/small.gif" style="width:100px;height:65px;" /></a></div>
                 <!-- /LOGO -->
                 <!-- MAIN NAVIGATION -->
                 <div class="span9">
-                    <div class="navbar  pull-right">
+                    <div class="navbar">
                         <div class="navbar-inner">
                             <a data-target=".navbar-responsive-collapse" data-toggle="collapse" class="btn btn-navbar"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a>
                             <div class="nav-collapse collapse navbar-responsive-collapse">
                                 <ul class="nav">
                                     <li class="active"><a href="index.html">Home</a></li>
-
-                                    <!--
-                                    <li class="dropdown">
-                                      <a href="about.html" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
-                                        <ul class="dropdown-menu">
-                                              <li><a href="about.html">Company</a></li>
-                                              <li><a href="about.html">History</a></li>
-                                              <li><a href="about.html">Team</a></li>
-                                        </ul>
-
-                                    </li>
-                                    -->
-
                                     <li><a href="sudoku.html">Sudoku</a></li>
                                     <li><a href="weatherService.html">Weather Service</a></li>
                                     <li><a href="activeInterval.html">Active Interval</a></li>
@@ -87,6 +82,8 @@
             </div>
         </div>
     </div>
+
+    <div id="info-container"></div>
     <!-- /HEADER ROW -->
 
     <div class="container">
@@ -118,30 +115,21 @@
                 </div>
 
             </div>
-            <!-- Carousel nav -->
-            <!--
-            <a class="carousel-control left " href="#myCarousel" data-slide="prev"><i class="icon-chevron-left"></i></a>
-            <a class="carousel-control right" href="#myCarousel" data-slide="next"><i class="icon-chevron-right"></i></a>
-            -->
-            <!-- /.Carousel nav -->
         </div>
-        <!-- /Carousel -->
-
         <!-- Feature==============================================-->   
-
+    </div>
+    <div class="container bg-lightgrey">
         <div class="row feature-box">
             <div class="span12 cnt-title">
                 <h1>Featured Projects</h1>
                 <span></span>
             </div>
-
             <div class="span4">
                 <img src="img/icon3.png">
                 <h2>Sudoku</h2>
                 <p>
                     One of my favorite games to play as a kid, created using Groovy. Play a round!
                 </p>
-
                 <a href="sudoku.html">Play &rarr;</a>
 
             </div>
@@ -164,9 +152,11 @@
                 <a href="webDevelopment.html">Take a Look &rarr;</a>
             </div>
         </div>
+    </div>
+    
+    <div class="hr-divider"></div>
 
-        <div class="hr-divider"></div>
-
+    <div class="container">
         <div class="row feature-box">
             <div id="container" style="width: 800px; height: 310px; margin: 0 auto">
                 <div style="margin-top: 100px; text-align: center" id="loading">
@@ -176,12 +166,12 @@
         </div>
 
         <!-- /.Feature -->
-
-        <div class="hr-divider"></div>
+    </div>
+    <div class="hr-divider"></div>
 
         <!-- Row View -->
 
-
+    <div class="container bg-lightgrey">
         <div class="row">
             <div class="span6"><img src="img/responsive.png"></div>
 
@@ -192,9 +182,11 @@
                 <a href="activeInterval.html">Move &rarr;</a>
             </div>
         </div>
+    </div>
+    
+    <div class="hr-divider"></div>
 
-        <div class="hr-divider"></div>
-
+    <div class="container">
         <div class="row">
             <div class="span12 cnt-title">
                 <h1>Take a look at my current favorites!</h1>
@@ -245,7 +237,7 @@
                             Exercism.io
                         </h4>
                         <p>
-                            This one I have not had the chance to play with yet. But when I have the time I will definitly have to give it a try.
+                            This one I have not had the chance to play with yet. But when I have the time I will definitely have to give it a try.
                             Programming challenges reviewed by fellow peers.
                         </p>
                         <a href="http://exercism.io/" class="btn" type="button">Exercism.io</a>
@@ -269,8 +261,6 @@
                 </div>
             </div>
         </div>
-
-
     </div>
 
 
@@ -281,12 +271,11 @@
     <footer>
         <div class="container">
             <div class="row">
-                <div class="social pull-right">
+                <div class="social" style="text-align:center">
                     <a href="https://github.com/jxxi"><img src="img/social/GitHub.png" alt=""></a>
                     <a href="https://www.linkedin.com/in/jasminerwiggins"><img src="img/social/linkedin.png" alt=""></a>
                 </div>
             </div>
-        </div>
         </div>
     </footer>
 
