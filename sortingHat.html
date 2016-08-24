@@ -34,9 +34,22 @@
 	<script src="https://code.createjs.com/tweenjs-0.6.2.min.js"></script>
 	<script>
 	  function init() {
-		var stage = new createjs.Stage("demoCanvas");
-        var circle = new createjs.Shape();
-        circle.graphics.beginFill("DeepSkyBlue").drawCircle(0, 0, 50);
+        var square;
+		var stage = new createjs.Stage("sortingHat");
+
+        for(var x = 0; x < 4; x++)
+        {
+            square = new createjs.Shape();
+            square.graphics.beginFill("DeepSkyBlue");
+            square.graphics.drawRect(0, 0, 50, 50);
+            square.x = x*50;
+            square.y = y*50;
+            //square.addEventListener("click", squareClick);
+            stage.addChild(square);
+        }
+        stage.update();
+        /*var circle = new createjs.Shape();
+        circle.graphics.beginFill("DeepSkyBlue").drawCircle(0, 0, 20);
         circle.x = 100;
         circle.y = 100;
         stage.addChild(circle);
@@ -49,7 +62,11 @@
 		  .to({ x: 100 }, 800, createjs.Ease.getPowInOut(2));
 		createjs.Ticker.setFPS(60);
 		createjs.Ticker.addEventListener("tick", stage);
+        */
 	}
+
+    function squareClick(e){
+    }
 	</script>
 </head>
 <body onload="init();">
@@ -85,12 +102,14 @@
             </div>
         </div>
     </div>
-    <div id="info-container"></div>
+    <!--<div id="info-container"></div>-->
     <!-- /HEADER ROW -->
 
     <div class="container">
-        <wizardheader>Coming Soon</wizardheader>
-		<canvas id="demoCanvas" width="500" height="300"></canvas>
+        <div class="row">
+            <wizardheader>Coming Soon</wizardheader>
+    		<canvas id="sortingHat" width="1000" height="600"></canvas>
+        </div>
     </div>
 
     <!--Footer==========================-->
