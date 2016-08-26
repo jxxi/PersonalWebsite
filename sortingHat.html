@@ -36,18 +36,37 @@
 	  function init() {
         var square;
 		var stage = new createjs.Stage("sortingHat");
-        var x = 100;
-        var y = 100;
 
+        //Draw Question Box
+        square = new createjs.Shape();
+        square.graphics.beginFill("DeepSkyBlue");
+        square.graphics.drawRect(0, 0, 620, 350);
+        square.x = 200;
+        square.y = 50;
+        stage.addChild(square);
+
+        //Draw Question # Boxes
+        for(var count = 0; count < 5; count++)
+        {
+            square = new createjs.Shape();
+            square.graphics.beginFill("Grey");
+            square.graphics.drawRect(0, 0, 50, 30);
+            square.x = 370+(count*55);
+            square.y = 50;
+            square.alpha = .50;
+            stage.addChild(square);
+        }
+
+        //Draw Answer Boxes
         for(var count = 0; count < 4; count++)
         {
             square = new createjs.Shape();
             square.graphics.beginFill("DeepSkyBlue");
-            square.graphics.drawRect(0, 0, 300, 150);
+            square.graphics.drawRect(0, 0, 300, 100);
             if(count == 0 || count == 2) square.x = 200;
             else square.x = 520;
-            if(count == 0 || count == 1) square.y = 130;
-            else square.y = 300;
+            if(count == 0 || count == 1) square.y = 430;
+            else square.y = 550;
             square.addEventListener("click", squareClick);
             stage.addChild(square);
         }
@@ -97,9 +116,9 @@
     <!-- /HEADER ROW -->
 
     <div class="container">
-        <div class="row feature-box">
+        <div class="row feature-box" width="1000" height="1200">
                 <wizardheader>Coming Soon</wizardheader>
-    		    <canvas id="sortingHat" width="1000" height="600"></canvas>
+    		    <canvas id="sortingHat" width="1000" height="1200"></canvas>
         </div>
     </div>
 
