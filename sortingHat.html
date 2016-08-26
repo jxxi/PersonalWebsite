@@ -48,14 +48,40 @@
         //Draw Question # Boxes
         for(var count = 0; count < 5; count++)
         {
+            var x = 370+(count*55);
+            var y = 50;
+
+            var container = new createjs.Container();
+            container.x = x;
+            container.y = y;
+            container.alpha = .50;
+            container.setBounds(0, 0, 100, 100);
+
             square = new createjs.Shape();
             square.graphics.beginFill("Grey");
             square.graphics.drawRect(0, 0, 50, 30);
-            square.x = 370+(count*55);
-            square.y = 50;
-            square.alpha = .50;
-            stage.addChild(square);
+            square.addEventListener(requestQuestion);
+            container.addChild(square);
+
+            var text = new createjs.Text();
+                text.set({
+                    text: count+1,
+                    textAlign: 'center'
+                });
+                text.x = x/18;
+                text.y = y/5;
+            container.addChild(text);           
+            stage.addChild(container);
         }
+
+        //Draw Question Box
+        square = new createjs.Shape();
+        square.graphics.beginFill("Grey");
+        square.graphics.drawRect(0, 0, 620, 70);
+        square.x = 200;
+        square.y = 330;
+        square.alpha = .50;
+        stage.addChild(square);
 
         //Draw Answer Boxes
         for(var count = 0; count < 4; count++)
@@ -75,7 +101,11 @@
 	}
 
     function squareClick(e){
-        //window.alert("clicked square!");
+        window.alert(e);
+    }
+
+    function requestQuestion(e){
+        window.alert(e);
     }
 	</script>
 </head>
