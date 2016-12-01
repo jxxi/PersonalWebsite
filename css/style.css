@@ -70,7 +70,7 @@ HEADER ROW STYLE
 }
 
 #info-container{
-	background: #c6c6c6;
+	background: #dfe3e6;
     height: 20px;
 }
 
@@ -150,6 +150,7 @@ Carousel
 
 .bg-lightgrey{
 	background: #f5f5f5;
+	opacity: .8;
 }
 
 /* Review
@@ -238,7 +239,7 @@ Carousel
 
 footer{
 border-top:1px solid #eee;
-background: #c4c4c4;
+background: #dfe3e6;
 padding: 30px 0;
 color: #ccc;
 margin-top:40px;
