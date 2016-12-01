@@ -701,7 +701,7 @@ Meteogram.prototype.parseYrData = function () {
     // Create the chart when the data is loaded
     this.createChart();
 };
-// End of the Meteogram protype
+// End of the Meteogram protoype
 
 
 
