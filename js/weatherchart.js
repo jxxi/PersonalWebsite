@@ -715,8 +715,6 @@ $(function () { // On DOM ready...
         //place = 'United_States/California/San_Francisco';
         //place = 'United_States/Minnesota/Minneapolis';
         location.hash = 'https://www.yr.no/place/' + place + '/forecast_hour_by_hour.xml';
-        history.pushState("", document.title, window.location.pathname
-            + window.location.search);
     }
 
     // Then get the XML file through Highcharts' jsonp provider, see
@@ -726,6 +724,8 @@ $(function () { // On DOM ready...
         'https://www.highcharts.com/samples/data/jsonp.php?url=' + location.hash.substr(1) + '&callback=?',
         function (xml) {
             window.meteogram = new Meteogram(xml, 'container');
+            history.pushState("", document.title, window.location.pathname
+                + window.location.search);
         }
     );
 
