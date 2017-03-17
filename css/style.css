@@ -71,6 +71,7 @@ HEADER ROW STYLE
 
 #info-container{
 	background: #dfe3e6;
+	opacity: .9;
     height: 20px;
 }
 
