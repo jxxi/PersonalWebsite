@@ -51,7 +51,7 @@ HEADER ROW STYLE
 #header-row .navbar .navbar-inner ul.nav > li > a{
 	box-shadow: none;
 	background: transparent;
-	color: #9A32CD;
+	color: #000000;
 }
 #header-row .navbar .navbar-inner ul.nav li.active a{
 	color: #333;	
