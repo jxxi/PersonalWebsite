@@ -10,8 +10,8 @@
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/bootstrap-responsive.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-	
-	
+
+
 	<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon.png">
 	<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
 	<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
@@ -35,11 +35,8 @@
     ============================================================-->
     <script src="http://code.jquery.com/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/weatherchart.js"></script>
     <script src="js/googleanalytics.js"></script>
 
-    <script src="https://code.highcharts.com/highcharts.js"></script>
-    <script src="https://code.highcharts.com/modules/exporting.js"></script>
     <link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 
 </head>
@@ -53,17 +50,17 @@
                 <!-- /LOGO -->
                 <!-- MAIN NAVIGATION -->
                 <div class="span9">
-                    <div class="navbar">
+                    <div class="navbar navbar-right">
                         <div class="navbar-inner">
                             <a data-target=".navbar-responsive-collapse" data-toggle="collapse" class="btn btn-navbar"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a>
                             <div class="nav-collapse collapse navbar-responsive-collapse">
-                                <ul class="nav">
+                                <ul class="nav navbar-right">
                                     <li class="active"><a href="index.html">Home</a></li>
                                     <!--<li><a href="sudoku.html">Sudoku</a></li>
                                     <li><a href="activeInterval.html">Active Interval</a></li>-->
                                     <li><a href="webDevelopment.html">Web Development</a></li>
                                     <li><a href="blog.html">Blog</a></li>
-                                    <li><a href="contact.html">Contact</a></li>
+                                    <!-- <li><a href="contact.html">Contact</a></li> -->
                                 </ul>
                             </div>
 
@@ -103,14 +100,14 @@
 
                             </div>
                             <br />
-                            <div class="span6" style="padding-top:40px"><img src="img\buildDesk.jpg"></div>
+                            <div class="span6" style="padding-top:40px"><img src="img\buildDesk.jpg" class="img-rounded"></div>
                         </div>
                     </div>
                 </div>
 
             </div>
         </div>
-        <!-- Feature==============================================-->   
+        <!-- Feature==============================================-->
     </div>
     <div class="container bg-lightgrey">
         <div class="row feature-box">
@@ -125,9 +122,15 @@
                     One of my favorite games to play as a kid, created using Groovy. Play a round!
                 </p>
                 <a href="sudoku.html">Play &rarr;</a>
-
             </div>
-
+            <div class="span4">
+                <img src="img/icon1.png">
+                <h2>Web Development</h2>
+                <p>
+                    Checkout some of the projects I've worked on.
+                </p>
+                <a href="webDevelopment.html">Take a Look &rarr;</a>
+            </div>
             <div class="span4">
                 <img src="img/icon2.png">
                 <h2>Sorting Hat</h2>
@@ -136,21 +139,10 @@
                 </p>
                 <a href="sortingHat.html">Make Magic &rarr;</a>
             </div>
-
-            <div class="span4">
-                <img src="img/icon1.png">
-                <h2>Web Development</h2>
-                <p>
-                    Recently I have gotten into web development a bit more.
-                </p>
-                <a href="webDevelopment.html">Take a Look &rarr;</a>
-            </div>
         </div>
     </div>
-    
-    <div class="hr-divider"></div>
 
-    <div class="container">
+    <!-- <div class="container">
         <div class="row feature-box">
             <div id="container" style="width: 800px; height: 310px; margin: 0 auto">
                 <div style="margin-top: 100px; text-align: center" id="loading">
@@ -158,12 +150,10 @@
                 </div>
             </div>
         </div>
+    </div> -->
 
-        <!-- /.Feature -->
-    </div>
-    <div class="hr-divider"></div>
 
-        <!-- Row View -->
+    <!-- <div class="hr-divider"></div>
 
     <div class="container bg-lightgrey">
         <div class="row">
@@ -176,8 +166,8 @@
                 <a href="activeInterval.html">Move &rarr;</a>
             </div>
         </div>
-    </div>
-    
+    </div> -->
+
     <div class="hr-divider"></div>
 
     <div class="container">
@@ -228,13 +218,13 @@
                     <a href="http://exercism.io/" class="pull-left"><img src="img/icon-service4.png" class="media-object" alt='' /></a>
                     <div class="media-body">
                         <h4 class="media-heading">
-                            Exercism.io
+                            CodeWars
                         </h4>
                         <p>
-                            This one I have not had the chance to play with yet. But when I have the time I will definitely have to give it a try.
-                            Programming challenges reviewed by fellow peers.
+                            This one I like to do when I feel like I haven't touched a particular language in a while. Random challenges are generated,
+                            and there are many languages to choose from. Join a clan or do it on your own!
                         </p>
-                        <a href="http://exercism.io/" class="btn" type="button">Exercism.io</a>
+                        <a href="http://codewars.com/" class="btn" type="button">CodeWars</a>
                     </div>
                 </div>
 
@@ -247,7 +237,7 @@
                             Code Academy
                         </h4>
                         <p>
-                            This is a great, interactive learning experience. I've recently began the AngularJS tutorials, and it is pretty nice.
+                            This is a great, interactive learning experience. I've recently began the ReactJS tutorials, and it is pretty nice.
                             There are also a lot of other languages to choose from.
                         </p>
                         <a href="https://www.codecademy.com/learn" class="btn" type="button">Code Academy</a>
